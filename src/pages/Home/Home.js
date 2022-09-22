@@ -153,6 +153,9 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <section className='camps-slider'>
+                    
+                </section>
                 <section className='zigzag-gray lg:py-66 py-35'>
                     <div className='lg:container-fluid lg:pr-0'>
                         <div className='flex flex-wrap items-center bg-gray-100'>
