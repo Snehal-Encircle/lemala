@@ -24,6 +24,7 @@ module.exports = {
       fontSize: {
         15: '15px',
         18: '18px',
+        26: '26px',
         36: '36px',
         53: '53px',
       },
@@ -72,6 +73,7 @@ module.exports = {
 
       padding: {
         18: '18px',
+        21: '21px',
         23: '23px',
         25: '25px',
         30: '30px',
@@ -87,6 +89,7 @@ module.exports = {
         66: '66px',
         73: '73px',
         75: '75px',
+        79: '79px',
         83: '83px',
         84: '84px',
         85: '85px',

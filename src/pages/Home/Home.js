@@ -154,7 +154,76 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='camps-slider'>
-                    
+                    <div className='container-fluid'>
+                        <div className='flex justify-between'>
+                            <h1>Our Camps and Lodges</h1>
+                            <div className='btn-green'>
+                                <Link to="/">Explore All</Link>
+                            </div>
+                        </div>
+                        <p className='max-w-[505px] pt-21 pb-79'>We have a range of inspiring lodges, luxurious villas and intimate tented camps in Northern Tanzania and Uganda.</p>
+                    </div>
+
+                    <Swiper
+                        slidesPerView={4}
+                        centeredSlides={true}
+                        spaceBetween={30}
+                        navigation={true}
+                        mousewheel={true}
+                        keyboard={true}
+                        modules={[Navigation]}
+                        className=""
+                    >
+                        <SwiperSlide>
+                            <img src="../images/House.jpg" alt="" />
+                            <div className='absolute bottom-6 left-7'>
+                                <h4>Hamerkop House by Lemala</h4>
+                                <div className='explore-btn text-white pt-1 border-white'>
+                                    <Link to="/">Explore</Link>
+                                </div>
+                            </div>
+
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/Ridge.jpg" alt="" />
+                            <div className='absolute bottom-6 left-7'>
+                                <h4>Mpingo Ridge Tented Lodge</h4>
+                                <div className='explore-btn text-white pt-1 border-white'>
+                                    <Link to="/">Explore</Link>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/camp.jpg" alt="" />
+                            <div className='absolute bottom-6 left-7'>
+                                <h4>Ngoronoro Tented Camp</h4>
+                                <div className='explore-btn text-white pt-1 border-white'>
+                                    <Link to="/">Explore</Link>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/House.jpg" alt="" />
+                            <div className='absolute bottom-6 left-7'>
+                                <h4>Mpingo Ridge Tented Lodge</h4>
+                                <div className='explore-btn text-white pt-1 border-white'>
+                                    <Link to="/">Explore</Link>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/camp.jpg" alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/camp.jpg" alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/House.jpg" alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="../images/camp.jpg" alt="" />
+                        </SwiperSlide>
+                    </Swiper>
                 </section>
                 <section className='zigzag-gray lg:py-66 py-35'>
                     <div className='lg:container-fluid lg:pr-0'>
