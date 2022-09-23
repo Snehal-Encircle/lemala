@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="bg-gray-100">
-            <div className="px-25 smallscreen:container-fluid">
+            <div className="px-25 lg:container-fluid">
                 <div className="form py-85">
                     <div className="form-title">
                         <h1>Hear the latest news about Lemala</h1>
@@ -27,14 +27,14 @@ const Footer = () => {
                             <div className="footer-info">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src="../images/footerLogo.jpg" className="max-w-[196px]  lgscreen:m-auto" alt="Logo" />
+                                        <img src="../images/footerlogo.png" className="max-w-[196px]  lgscreen:m-auto" alt="Logo" />
                                     </Link>
                                 </div>
                                 <p className='lgscreen:text-center'>
                                     A leading provider of boutique, beautiful and unusual accommodation in some of the world’s most celebrated wildlife regions.
                                 </p>
                                 <div className="sicon">
-                                    <ul className="flex flex-wrap justify-start mt-31 space-x-4 smscreen:justify-center">
+                                    <ul className="flex flex-wrap justify-start mt-31 space-x-4 lgscreen:justify-center">
                                         <li><Link to="/"><img src="../images/twitter.svg" alt="twitter" /></Link></li>
                                         <li><Link to="/"><img src="../images/facebook.svg" alt="facebook" /></Link></li>
                                         <li><Link to="/"><img src="../images/tripadvisor.svg" alt="tripadvisor" /></Link></li>
@@ -107,9 +107,20 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className='pt-36' />
-            <div className="container-fluid">
-
+            <hr className='my-36' />
+            <div className="px-25 lg:container-fluid">
+                <div className="copyright lg:py-30 py-15">
+                    <div className="flex flex-wrap justify-between items-center mdscreen:flex-col mdscreen:justify-center">
+                        <div>
+                            <h2 className="text-black-100">All rights reserved © 2021 Lemala</h2>
+                        </div>
+                        <ul className="flex flex-wrap justify-center items-center py-25">
+                            <h2 className='text-black-100'><Link to="/">COVID-19 Protocol</Link></h2>
+                            <h2 className='text-black-100 lg:px-35'><Link to="/">Terms and Conditions</Link></h2>
+                            <h2 className='text-black-100'><Link to="/">Privacy Policy</Link></h2>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
     )
