@@ -14,7 +14,7 @@
         @apply font-body font-normal text-base text-center text-green-100
     }
     h4 {
-        @apply font-body font-normal text-26 leading-8 text-white
+        @apply font-body font-normal smscreen:text-15 text-20 lg:text-26 smscreen:leading-5 leading-6 lg:leading-8 text-white
     }
     p {
         @apply font-body font-normal text-base text-green-100 text-opacity-50
@@ -36,6 +36,9 @@
     }
     .explore-btn {
         @apply font-body font-normal text-15 leading-22 text-green-100 pt-5 border-b border-green-200 w-max pb-1
+    }
+    .navigations li {
+        @apply font-body font-normal text-base text-white pr-31 items-center
     }
     .content-inner p {
         @apply m-auto text-center
@@ -59,8 +62,15 @@
     .image-slider .swiper-button-prev:after{
         @apply bg-[url('/home/encircle/Encircle/lemala/public/images/previous.svg')] bg-contain bg-no-repeat w-[44px] h-[44px]
     }
-    .image-slider .swiper-button-next, .image-slider .swiper-button-prev {
-        width: calc(var(--swiper-navigation-size)/ 50 * 62) ;
+    @media (min-width:980px) {
+        .image-slider .swiper-button-next, .image-slider .swiper-button-prev {
+            width: calc(var(--swiper-navigation-size)/ 50 * 62) ;
+        }
+    }
+    @media (max-width:981px) {
+        .image-slider .swiper-button-next, .image-slider .swiper-button-prev {
+            width: calc(var(--swiper-navigation-size)/ 30 * 15) ;
+        }
     }
     .image-slider .swiper-button-next:after{
         @apply bg-[url('/home/encircle/Encircle/lemala/public/images/next.svg')] bg-contain bg-no-repeat w-[44px] h-[44px]
@@ -76,7 +86,7 @@
         content: '' !important;
     }
     .image-slider .swiper-horizontal>.swiper-pagination-bullets {
-        @apply bottom-[48px]
+        @apply bottom-3 lg:bottom-[48px]
     }
     .image-slider .swiper-pagination-bullet-active{
         @apply !bg-white
@@ -84,10 +94,53 @@
     .image-slider .swiper-pagination-bullet {
         @apply border border-white opacity-90 bg-transparent
     }
-    .image-slider .swiper-pagination-bullet {
-        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
-        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+    @media (min-width:1279px) {
+        .image-slider .swiper-pagination-bullet {
+            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+            height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+        }
     }
+    @media (max-width:1280px) {
+        .image-slider .swiper-pagination-bullet {
+            width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+            height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+        }
+    }
+
+    .camps-slider .swiper-button-prev:after{
+        @apply bg-[url('/home/encircle/Encircle/lemala/public/images/black-next.svg')] bg-contain bg-no-repeat small:w-[25px] small:h-[25px] w-[44px] h-[44px] rotate-180
+    }
+    .camps-slider .swiper-button-next:after{
+        @apply bg-[url('/home/encircle/Encircle/lemala/public/images/black-next.svg')] bg-contain bg-no-repeat small:w-[25px]  small:h-[25px] w-[44px] h-[44px]
+    }
+
+    .camps-slider .swiper-button-next, .camps-slider .swiper-button-prev {
+        top: 90%;
+        width: calc(var(--swiper-navigation-size)/ 50 * 62) ;
+    }
+    .camps-slider .swiper-button-prev {
+        @apply small:left-[65%] smscreen1:left-[70%] mdscreen:left-[75%] lgscreen:left-[80%] left-[85%] right-auto
+    }
+    .camps-slider .swiper-button-next {
+        right: 4%;
+    }
+
+    .camps-slider .swiper-button-next:after,
+    .camps-slider .swiper-button-prev:after
+    {
+        content: '' !important;
+    }
+    
+    /* .image-slider::before {
+        @apply !bg-[url('/home/encircle/Encircle/lemala/public/images/curve-line.jpg')]
+    } */
+
+    /* .image-slider:before{
+        content:url('/home/encircle/Encircle/lemala/public/images/curve-line.jpg');
+        max-height: 210px;
+        max-width:100vw
+      } */
+      
 }
 
 @layer utilities {

@@ -8,11 +8,17 @@ module.exports = {
       screens:{
         minscreen: { min: '1440px' },
         maxscreen: { max: '1400px' },
+        laptopmini: { max: '1300px' },
+        laptop: { max: '1366px' },
         xlmax: { max: '1279px' },
         lgscreen: { max: '1024px' },
-        mdscreen: { max: '767px' },
+        lgscreen1: { max: '1023px' },
+        midscreen: { max: '980px' },
+        mdscreen: { max: '768px' },
         smscreen: { max: '640px' },
-        smallscreen: { min: '460px' },
+        smscreen1: { max: '600px' },
+        small: { max: '480px' },
+        smallscreen2: { min: '460px' },
       },
 
       fontFamily: {
@@ -22,7 +28,9 @@ module.exports = {
       },
 
       fontSize: {
+        10: '10px',
         15: '15px',
+        20: '20px',
         18: '18px',
         26: '26px',
         36: '36px',
@@ -38,6 +46,7 @@ module.exports = {
       lineHeight: {
         18: '18px',
         22: '22px',
+        25: '25px',
         27: '27px',
         38: '38px',
         45: '45px',
@@ -73,6 +82,7 @@ module.exports = {
 
       padding: {
         18: '18px',
+        19: '19px',
         21: '21px',
         23: '23px',
         25: '25px',
@@ -84,7 +94,9 @@ module.exports = {
         41: '41px',
         42: '42px',
         46: '46px',
+        49: '49px',
         50: '50px',
+        56: '56px',
         65.5: '65.5px',
         66: '66px',
         73: '73px',
@@ -95,10 +107,19 @@ module.exports = {
         85: '85px',
         100: '100px',
         113: '113px',
+        125: '125px',
+        132: '132px',
+        142: '142px',
         144: '144px',
+        150: '150px',
+        '12per': '12%',
+        '15per': '15%',
+        '30per': '30%',
       },
       margin: {
+        30: '30px',
         31: '31px',
+        36: '36px',
         41: '41px',
         52: '52px',
         100: '100px',
