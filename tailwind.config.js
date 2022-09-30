@@ -6,13 +6,15 @@ module.exports = {
   theme: {
     extend: {
       screens:{
+        bigmax: {max: '1600px'},
         minscreen: { min: '1440px' },
-        maxscreen: { max: '1400px' },
+        maxscreen: { max: '1440px' },
         laptopmini: { max: '1300px' },
         laptop: { max: '1366px' },
         xlmax: { max: '1279px' },
         lgscreen: { max: '1024px' },
         lgscreen1: { max: '1023px' },
+        lgmin: { min: '1025px' },
         midscreen: { max: '980px' },
         mdscreen: { max: '768px' },
         smscreen: { max: '640px' },
@@ -33,13 +35,16 @@ module.exports = {
         20: '20px',
         18: '18px',
         26: '26px',
+        32: '32px',
         36: '36px',
+        43: '43px',
         53: '53px',
       },
        
       spacing: {
         '18per': '18%',
         '27per': '27%',
+        '190per': '190%',
         
       },
 
@@ -48,8 +53,10 @@ module.exports = {
         22: '22px',
         25: '25px',
         27: '27px',
+        29: '29px',
         38: '38px',
         45: '45px',
+        48: '48px',
         59: '59px',
       },
 
@@ -57,16 +64,25 @@ module.exports = {
         '10.8': '10.8%',
         '22.7': '22.7%',
         '23per': '23%',
+        30: '30px',
+        21: '21px',
       },
-
+      height: {
+        21: '21px',
+      },
+      maxWidth: {
+        110: '110px',
+      },
       colors: {
         black: {
           100: '#000000',
           200: '#2F3434',
+          300: '#232828',
         },
         green: {
           100: '#3C3B0F',
           200: '#809B10',
+          300: '#F8F8F8',
         },
         gray: {
           100:'#F1EDED',
@@ -81,6 +97,7 @@ module.exports = {
       },
 
       padding: {
+        16: '16px',
         18: '18px',
         19: '19px',
         21: '21px',
@@ -90,15 +107,21 @@ module.exports = {
         31: '31px',
         35: '35px',
         36: '36px',
+        37: '37px',
+        38: '38px',
         39: '39px',
         41: '41px',
         42: '42px',
+        45: '45px',
         46: '46px',
+        47: '47px',
         49: '49px',
         50: '50px',
         56: '56px',
+        60: '60px',
         65.5: '65.5px',
         66: '66px',
+        72: '72px',
         73: '73px',
         75: '75px',
         79: '79px',
@@ -112,15 +135,20 @@ module.exports = {
         142: '142px',
         144: '144px',
         150: '150px',
+        165: '165px',
+        175: '175px',
         '12per': '12%',
         '15per': '15%',
         '30per': '30%',
       },
       margin: {
+        25: '25px',
         30: '30px',
         31: '31px',
         36: '36px',
         41: '41px',
+        45: '45px',
+        47: '47px',
         52: '52px',
         100: '100px',
       },
