@@ -21,7 +21,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='zigzag lg:py-66 py-35'>
+                <section className='zigzag lg:pt-66 pt-35'>
                     <div className='lg:container-fluid lgscreen:px-25'>
                         <div className='flex flex-wrap items-center'>
                             <div className='lg:w-6/12 w-full'>
@@ -54,7 +54,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <img src="../images/Path 2.jpg" alt="" className='absolute' />
+                    <div className='shape-line relative left-0 bottom-0 md:bottom-[-30px] md:mt-[-100px] z-50'>
+                        <img src="https://www.lemalacamps.com/app/themes/lemala/public/images/shape-line.png?id=d9d75b32763757e52d15" alt="" className='w-full block align-middle' />
+                    </div>
                 </section>
                 <section className='why-book py-14'>
                     <div className=''>
@@ -283,7 +285,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='zigzag-gray lg:pt-66 py-35'>
+                <section className='zigzag-gray lg:pt-66 lgscreen1:pb-2 py-35'>
                     <div className='lg:container-fluid lg:pl-0'>
                         <div className='flex flex-wrap items-center bg-gray-100'>
                             <div className='lg:w-6/12 w-full lgscreen::order-2'>

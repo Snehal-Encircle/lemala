@@ -9,13 +9,13 @@ const Footer = () => {
                     <div className="form-title">
                         <h1>Hear the latest news about Lemala</h1>
                     </div>
-                    <form className="minscreen:flex mt-52 maxscreen:items-center">
-                        <div className='name-info lg:flex'>
-                            <input type="text" value="Jane" className="form-field smscreen:max-w-[268px] lg:max-w-[294px]" />
-                            <input type="text" placeholder="Surname" className="form-field smscreen:max-w-[268px] lg:max-w-[294px]" />
+                    <form className="xl:flex mt-52 xl:items-center">
+                        <div className='name-info xl:flex'>
+                            <input type="text" value="Jane" className="form-field w-full" />
+                            <input type="text" placeholder="Surname" className="form-field w-full" />
                         </div>
-                        <div className='lg:flex'>
-                            <input type="email" placeholder="Email address" className="form-field smscreen:max-w-[268px]" />
+                        <div className='xl:flex'>
+                            <input type="email" placeholder="Email address" className="form-field w-full" />
                             <input type="submit" value="Subscribe" className="form-field smscreen:pr-6 xlmax:justify-center xlmax:flex xl:px-65.5 border-green-100 text-green-100" />
                         </div>
 
@@ -114,7 +114,7 @@ const Footer = () => {
                         <div>
                             <h2 className="text-black-100">All rights reserved © 2021 Lemala</h2>
                         </div>
-                        <ul className="flex flex-wrap justify-center items-center py-25">
+                        <ul className="flex flex-wrap justify-center lgscreen:space-x-4 items-center py-25">
                             <h2 className='text-black-100'><Link to="/">COVID-19 Protocol</Link></h2>
                             <h2 className='text-black-100 lg:px-35'><Link to="/">Terms and Conditions</Link></h2>
                             <h2 className='text-black-100'><Link to="/">Privacy Policy</Link></h2>
